@@ -1,0 +1,21 @@
+Dedication 6,8,11,14,15
+Output 9, 13
+
+
+11
+
+System
+8 18 23
+
+
+
+sudo adduser username(with home)
+sudo useradd username(without home)
+sudo userdel username(then rm-rf home/username)
+
+su - username (to switch)
+su -
+sudo passwd username (change password)
+cat /etc/passwd (user) grep with home
+usermod -aG sudo username add to sudo group
+whoami
