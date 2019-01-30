@@ -1,1 +1,2 @@
-ipconfig getifaddr en0
+ifconfig |  awk '/broadcast/ {print $6}'
+echo 192.168.20.1 - 192.168.2.254

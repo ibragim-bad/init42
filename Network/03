@@ -1,1 +1,1 @@
-networksetup -getinfo Wi-Fi | awk '/Wi-Fi/ {print $3}'
+networksetup -getinfo Wi-Fi | awk '/Wi-Fi/ {print $3}'| tail -n1
