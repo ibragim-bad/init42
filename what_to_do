@@ -5,13 +5,14 @@ Output 9, 13
 11
 
 System
-8 18 23
+8 18 23 14
 
 
 
 sudo adduser username(with home)
 sudo useradd username(without home)
-sudo userdel username(then rm-rf home/username)
+sudo userdel username(then rm-rf home/username or userdel -r)
+
 
 su - username (to switch)
 su -
@@ -19,3 +20,9 @@ sudo passwd username (change password)
 cat /etc/passwd (user) grep with home
 usermod -aG sudo username add to sudo group
 whoami
+
+скрипт создает папки от числа по умлочанию 1 до числа
+папки число
+
+
+scripting 2
