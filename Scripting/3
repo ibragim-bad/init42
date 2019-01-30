@@ -1,0 +1,16 @@
+#!/bin/bash
+
+ARGS=2
+
+if [ $# != "$ARGS" ]
+then
+  echo "How to use: sh `basename $0` old_extension new_extension\nExample: 3 c h"
+  exit -1
+fi
+
+for filename in *.$1
+do
+  mv $filename ${filename%$1}$2
+done
+
+exit 0
