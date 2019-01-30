@@ -1,1 +1,1 @@
-ifconfig |  awk '/broadcast/ {print $6}'
+ipconfig getifaddr en0
